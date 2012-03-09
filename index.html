@@ -58,8 +58,8 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <!-- <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li> -->
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -84,41 +84,24 @@
 
       <!-- Example row of columns -->
       <div class="row" id="about">
-        <div class="span6">
+        <div class="span4">
           <h2>What is maphub?</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+           <p>Maphub is a Web portal prototype for georeferencing and annotating digitized, high-resolution historic maps. All annotations will be represented in the <a href="http://www.openannotation.org/spec/beta/" title="Open Annotation: Beta Data Model Guide">Open Annotation Collaboration Data Model</a> and become Web resources that can be accessed by various clients simply by dereferencing HTTP URIs. The portal will be bootstrapped with approximately 6000 public domain maps taken from the <a href="http://memory.loc.gov/ammem/gmdhtml/" title="Map Collections Home Page">Library of Congress Historic Map division</a>. A first beta-version will be released for interested test users in early summer 2012.</p>
         </div>
-        <div class="span6">
-          <h2>Status</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-       </div>
-      </div>
-      
-      <hr>
-      
-      <div class="row" id="contact">
-        <div class="span6">
-          <h2>Contact</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="span4">
+          <h2>Status and Technical Details</h2>
+           <p>Currently we are working on the OAC specification for map annotations. We are also building the portal using Ruby on Rails reusing components and algorithms we previously developed for the <a href="https://github.com/yuma-annotation">YUMA annotation framework</a>. This includes component that allow us to link user-contributed annotations with data from other publicly available datasources, such as <a href="http://dbpedia.org/" title="">DBpedia</a> and <a href="http://www.geonames.org/" title="GeoNames">GeoNames</a>.</p>
         </div>
-        <div class="span6">
-          
+        <div class="span4">
+            <h2>Demo Screencast</h2>
+            <iframe src="http://player.vimeo.com/video/21390925?title=0&amp;byline=0&amp;portrait=0" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         </div>
       </div>
       
       <hr>
       
-      <div class="row">
-        <div class="span6">
-          <h3>Acknowledgements</h3>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-      </div>
-
-      <hr>
-
       <footer>
-        <p>&copy; maphub 2012</p>
+        <p>&copy; maphub 2012; Website powered by <a href="http://twitter.github.com/bootstrap/" title="Bootstrap, from Twitter">Bootstrap, from Twitter.</a></p>
       </footer>
 
     </div> <!-- /container -->
