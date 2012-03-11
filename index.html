@@ -16,17 +16,17 @@
     <style type="text/css">
       #landing {
         background-image: url('img/background.jpg');
-        background-repeat: no-repeat, repeat-x;
+        background-repeat: repeat-x;
         background-position: center top, left top;
         background-position-x: 50%, 0%;
-        background-position-y: 40px, 0%;
+        background-position-y: 500px, 0%;
         background-color: 
         white;
       }
-      #landing .hero-unit {
+      #intro {
         margin-top:75px;
       }
-      #padding {
+      .padding {
         height:50px;
       }
     </style>
@@ -68,7 +68,7 @@
 
     <div class="container">
       
-      <div class="row">
+      <div class="row" id="intro">
         <div class="span6">        
           <!-- Main hero unit for a primary marketing message or call to action -->
           <div class="hero-unit">
@@ -78,27 +78,27 @@
             <!-- <p><a class="btn btn-primary btn-large" href="about">Learn more &raquo;</a></p> -->
           </div>
         </div>
-      </div>
-      
-      <div id="padding"></div>
-
-      <!-- Example row of columns -->
-      <div class="row" id="about">
-        <div class="span4">
-          <h2>What is maphub?</h2>
-           <p>Maphub is a Web portal prototype for georeferencing and annotating digitized, high-resolution historic maps. All annotations will be represented in the <a href="http://www.openannotation.org/spec/beta/" title="Open Annotation: Beta Data Model Guide">Open Annotation Collaboration Data Model</a> and become Web resources that can be accessed by various clients simply by dereferencing HTTP URIs. The portal will be bootstrapped with approximately 6000 public domain maps taken from the <a href="http://memory.loc.gov/ammem/gmdhtml/" title="Map Collections Home Page">Library of Congress Historic Map division</a>. A first beta-version will be released for interested test users in early summer 2012.</p>
-        </div>
-        <div class="span4">
-          <h2>Status and Technical Details</h2>
-           <p>Currently we are working on the OAC specification for map annotations. We are also building the portal using Ruby on Rails reusing components and algorithms we previously developed for the <a href="https://github.com/yuma-annotation">YUMA annotation framework</a>. This includes component that allow us to link user-contributed annotations with data from other publicly available datasources, such as <a href="http://dbpedia.org/" title="">DBpedia</a> and <a href="http://www.geonames.org/" title="GeoNames">GeoNames</a>.</p>
-        </div>
-        <div class="span4">
+        <div class="span6">
             <h2>Demo Screencast</h2>
             <iframe src="http://player.vimeo.com/video/21390925?title=0&amp;byline=0&amp;portrait=0" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         </div>
       </div>
       
-      <hr>
+      <div class="padding"></div>
+
+      <!-- Example row of columns -->
+      <div class="row" id="about">
+        <div class="span6">
+          <h2>What is maphub?</h2>
+           <p>Maphub is a Web portal prototype for georeferencing and annotating digitized, high-resolution historic maps. All annotations will be represented in the <a href="http://www.openannotation.org/spec/beta/" title="Open Annotation: Beta Data Model Guide">Open Annotation Collaboration Data Model</a> and become Web resources that can be accessed by various clients simply by dereferencing HTTP URIs. The portal will be bootstrapped with approximately 6000 public domain maps taken from the <a href="http://memory.loc.gov/ammem/gmdhtml/" title="Map Collections Home Page">Library of Congress Historic Map division</a>. A first beta-version will be released for interested test users in early summer 2012.</p>
+        </div>
+        <div class="span6">
+          <h2>Status and Technical Details</h2>
+           <p>Currently we are working on the OAC specification for map annotations. We are also building the portal using Ruby on Rails reusing components and algorithms we previously developed for the <a href="https://github.com/yuma-annotation">YUMA annotation framework</a>. This includes component that allow us to link user-contributed annotations with data from other publicly available datasources, such as <a href="http://dbpedia.org/" title="">DBpedia</a> and <a href="http://www.geonames.org/" title="GeoNames">GeoNames</a>.</p>
+        </div>
+      </div>
+      
+      <div class="padding"></div>
       
       <footer>
         <p>&copy; maphub 2012; Website powered by <a href="http://twitter.github.com/bootstrap/" title="Bootstrap, from Twitter">Bootstrap, from Twitter.</a></p>
