@@ -30,10 +30,28 @@
         height:50px;
       }
 
-		#market{
-			text-align:center;
-			margin:0 auto;
-		}
+			#market{
+				/**text-align:center;
+				margin:0 auto;**/
+			}
+			#demo{
+				/**margin-right:5px;**/
+				width:100%;
+			}
+			.video_wrapper{
+				position:relative;
+				padding-bottom:56.25%;
+				padding-top:25px;
+				height:0;
+				
+			}
+			.video{
+				position:absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+			}
     </style>
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -107,9 +125,12 @@
           <h2>What is maphub?</h2>
            <p>Maphub is a Web portal prototype for georeferencing and annotating digitized, high-resolution historic maps. All annotations will be represented in the <a href="http://www.openannotation.org/spec/beta/" title="Open Annotation: Beta Data Model Guide">Open Annotation Collaboration Data Model</a> and become Web resources that can be accessed by various clients simply by dereferencing HTTP URIs. The portal will be bootstrapped with approximately 6000 public domain maps taken from the <a href="http://memory.loc.gov/ammem/gmdhtml/" title="Map Collections Home Page">Library of Congress Historic Map division</a>. A first beta-version will be released for interested test users in early summer 2012.</p>
         </div>
-		<div class="span4">
-        	<h2>Demo Screencast</h2>
-			<iframe src="http://player.vimeo.com/video/21390925?title=0&amp;byline=0&amp;portrait=0" width="300" height="200" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				<div class="span4" >
+					<h2>Demo Screencast</h2>
+					<div class="video_wrapper">
+        		
+						<iframe src="http://player.vimeo.com/video/21390925?title=0&amp;byline=0&amp;portrait=0" class="video" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					</div>
         </div>
         <div class="span4">
           <h2>Status and Technical Details</h2>
