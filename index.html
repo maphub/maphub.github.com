@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,26 +8,32 @@
     <meta name="author" content="">
     
     <!-- Le JS -->
-    <script src="bootsrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
     
     <!-- Le styles -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       #landing {
-        background-image: url('img/background.jpg');
+        /**background-image: url('img/background.jpg');**/
         background-repeat: repeat-x;
         background-position: center top, left top;
         background-position-x: 50%, 0%;
         background-position-y: 500px, 0%;
-        background-color: 
-        white;
+        /**background-color: white;**/
       }
       #intro {
         margin-top:75px;
       }
+	
+
       .padding {
         height:50px;
       }
+
+		#market{
+			text-align:center;
+			margin:0 auto;
+		}
     </style>
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -54,12 +59,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">maphub</a>
+          <a class="brand" href="index.html">maphub</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <!-- <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li> -->
+              <li class="active"><a href="index.html">Home</a></li>
+				<li class="divider-vertical"></li>
+              <li><a href="about.html">About</a></li>
+				<li class="divider-vertical"></li>
+              <li><a href="contact_us.html">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -67,32 +74,44 @@
     </div>
 
     <div class="container">
-      
-      <div class="row" id="intro">
-        <div class="span6">        
-          <!-- Main hero unit for a primary marketing message or call to action -->
-          <div class="hero-unit">
-            <h1>Welcome to the maphub project!</h1>
-            <p></p>
-            <p>maphub is a portal environment for social annotation of digitized (historic) maps, powered by YUMA.</p>
-            <!-- <p><a class="btn btn-primary btn-large" href="about">Learn more &raquo;</a></p> -->
-          </div>
-        </div>
-        <div class="span6">
-            <h2>Demo Screencast</h2>
-            <iframe src="http://player.vimeo.com/video/21390925?title=0&amp;byline=0&amp;portrait=0" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-        </div>
-      </div>
+		
+		<div class="row" id="intro">
+			<div class="span12">
+				<div class="row" id="market">
+        			<div class="span10">        
+          				<!-- Main hero unit for a primary marketing message or call to action -->
+
+		
+          				<div class="hero-unit">
+            				<h1>Welcome to the maphub project!</h1>
+							<!--<img src="img/paper.jpg" class="stretch" alt="parchment"/>-->
+            				<p></p>
+            				<p>maphub is a portal environment for social annotation of digitized (historic) maps, powered by YUMA.</p>
+            				<!-- <p><a class="btn btn-primary btn-large" href="about">Learn more &raquo;</a></p> -->
+          				</div>
+        			</div>
+        			<!--<div class="span4">-->
+            			<!--<h2>Demo Screencast</h2>
+            			<iframe src="http://player.vimeo.com/video/21390925?title=0&amp;byline=0&amp;portrait=0" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>-->
+					<!--	<img src="img/map1.png" alt="mapPic"/>
+        			</div>-->
+				</div>
+			</div>
+		</div>
       
       <div class="padding"></div>
 
       <!-- Example row of columns -->
       <div class="row" id="about">
-        <div class="span6">
+        <div class="span4">
           <h2>What is maphub?</h2>
            <p>Maphub is a Web portal prototype for georeferencing and annotating digitized, high-resolution historic maps. All annotations will be represented in the <a href="http://www.openannotation.org/spec/beta/" title="Open Annotation: Beta Data Model Guide">Open Annotation Collaboration Data Model</a> and become Web resources that can be accessed by various clients simply by dereferencing HTTP URIs. The portal will be bootstrapped with approximately 6000 public domain maps taken from the <a href="http://memory.loc.gov/ammem/gmdhtml/" title="Map Collections Home Page">Library of Congress Historic Map division</a>. A first beta-version will be released for interested test users in early summer 2012.</p>
         </div>
-        <div class="span6">
+		<div class="span4">
+        	<h2>Demo Screencast</h2>
+			<iframe src="http://player.vimeo.com/video/21390925?title=0&amp;byline=0&amp;portrait=0" width="300" height="200" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+        <div class="span4">
           <h2>Status and Technical Details</h2>
            <p>Currently we are working on the OAC specification for map annotations. We are also building the portal using Ruby on Rails reusing components and algorithms we previously developed for the <a href="https://github.com/yuma-annotation">YUMA annotation framework</a>. This includes component that allow us to link user-contributed annotations with data from other publicly available datasources, such as <a href="http://dbpedia.org/" title="">DBpedia</a> and <a href="http://www.geonames.org/" title="GeoNames">GeoNames</a>.</p>
         </div>
