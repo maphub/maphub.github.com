@@ -110,7 +110,7 @@ body {
   font-size: 13px;
   line-height: 18px;
   color: #333333;
-  background-color: #191970;
+	/**background-color:#EED5B7;**/
 	
 }
 a {
@@ -124,6 +124,7 @@ a:hover {
 .row {
   margin-left: -20px;
   *zoom: 1;
+
 }
 .row:before, .row:after {
   display: table;
@@ -2192,7 +2193,7 @@ button.btn.small, input[type="submit"].btn.small {
   font-size: 11px;
   font-weight: bold;
   line-height: 18px;
-  color: #999999;
+  color: #291400;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
 }
@@ -2213,7 +2214,7 @@ button.btn.small, input[type="submit"].btn.small {
   padding: 3px 15px;
 }
 .nav-list .active > a, .nav-list .active > a:hover {
-  color: #ffffff;
+  color: #291400;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
   background-color: #0088cc;
 }
@@ -2516,10 +2517,10 @@ button.btn.small, input[type="submit"].btn.small {
   display: block;
   padding: 8px 20px 12px;
   margin-left: -20px;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 200;
   line-height: 1;
-  color: #ffffff;
+  color: #CDB79E;
 }
 .navbar .navbar-text {
   margin-bottom: 0;
@@ -2645,17 +2646,19 @@ button.btn.small, input[type="submit"].btn.small {
   float: none;
   padding: 10px 10px 11px;
   line-height: 19px;
-  color: #999999;
+  color: #CDB79E;
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 .navbar .nav > li > a:hover {
   background-color: transparent;
-  color: #ffffff;
+  color: #FFEBCD;
   text-decoration: none;
 }
 .navbar .nav .active > a, .navbar .nav .active > a:hover {
-  color: #ffffff;
+  /**color: #EEC591;**/
+	/**color: #FFEBCD;**/
+	color:#F5F5DC;
   text-decoration: none;
   background-color: #222222;
 }
@@ -3463,14 +3466,28 @@ a.thumbnail:hover {
 }
 .hero-unit {
   padding: 60px;
+	font-family:Architects Daughter;
   margin-bottom: 30px;
-  background-color: #f5f5f5;
+  /**background-color: #f5f5f5;**/
+	background-color:rgb(0,0,0);
+	background-image:url('http://www.zingerbugimages.com/backgrounds/parchment.jpg');
+	background-repeat:repeat;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+	/**margin:0 auto;**/
+	align:center;
+	margin-left:15%;
+	text-align:center;
+}
+	
+
+.stretch{
+	width:100%;
+	height:100%;
 }
 .hero-unit h1 {
-  margin-bottom: 0;
+  margin-bottom: 20px;
   font-size: 60px;
   line-height: 1;
   letter-spacing: -1px;
