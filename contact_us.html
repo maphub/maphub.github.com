@@ -12,22 +12,7 @@
     
     <!-- Le styles -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      #landing {
-        /**background-image: url('img/background.jpg');**/
-        background-repeat: repeat-x;
-        background-position: center top, left top;
-        background-position-x: 50%, 0%;
-        background-position-y: 500px, 0%;
-        /**background-color: white;**/
-      }
-      #intro {
-        margin-top:75px;
-      }
-      .padding {
-        height:50px;
-      }
-    </style>
+    <link href="style/style.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -64,15 +49,36 @@
       </div>
     </div>
 
-	<div class="container">
-		<div class="row" id="intro">
-			<div class="hero-unit">
-				<form method="post" action="form_contact.php" class="well form-vertical">
-					<input type="text"/>
-					<input type="text"/>
-					<input type="textarea"/>
-					<input type="submit" value="submit"/>
+	<div class="container" id="con_body">
+		<div class="row" id="intro2">
+			<div class="span6" id="about_Title">
+				<h1>Contact Us</h1>
+			</div>
+			<div class="span4"id="contact_Form">
+				<form method="post" action="form_contact.php" class="form-vertical">
+					<fieldset>
+					<div class="control-group">
+						<label class="control-label"for="inputName">Name</label>
+						<div class="controls">
+							<input type="text" id=inputName/>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label"for="inputAddress">Email Address</label>
+						<div class="controls">
+							<input type="text" id=inputAddress/>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label"for="textarea">Comments</label>
+						<div class="controls">
+							<textarea class="input-xlarge" id="textarea" rows="10"></textarea>
+						</div>
+					</div>
+          <button type="submit" class="btn pull-right">Send</button>
+         
 					
+					</fieldset>
 				</form>
 			</div>
 		</div>
