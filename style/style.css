@@ -126,6 +126,7 @@ body{
 
 .brand{
 	font-family:Architects Daughter;
+	color:#CDAA7D;
 }
 
 #contact_Form{
@@ -176,6 +177,12 @@ label{
 	padding-bottom:20px;
 }
 
+#mission2{
+	margin-left:18%;
+	padding-bottom:20px;
+}
+
+
 #helv{
 	font-family:helvetica;
 }
@@ -184,10 +191,6 @@ label{
 	color:#283a62;
 }
 
-#mission2{
-	margin-left:18%;
-	padding-bottom:20px;
-}
 
 #descrip{
 	margin-top:11%;
