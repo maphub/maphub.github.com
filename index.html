@@ -12,69 +12,7 @@
     
     <!-- Le styles -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      #landing {
-        /**background-image: url('img/background.jpg');**/
-        background-repeat: repeat-x;
-        background-position: center top, left top;
-        background-position-x: 50%, 0%;
-        background-position-y: 500px, 0%;
-       
-        /**background-color: white;**/
-      }
-      #intro {
-        margin-top:75px;
-      }
-	
-			body{
-				background-color:rgb(0,0,0);
-				background-image:url("img/oceanPaper.jpg");
-				background-repeat:repeat;
-				background-size:100%;
-				background-origin:content;
-				width:100%;
-        height:100%;
-			}
-      .padding {
-        height:50px;
-      }
-
-			#market{
-				/**text-align:center;
-				margin:0 auto;**/
-			}
-			#demo{
-				/**margin-right:5px;**/
-				width:100%;
-			}
-			.video_wrapper{
-				position:relative;
-				padding-bottom:56.25%;
-				padding-top:25px;
-				height:0;
-				
-			}
-			.video{
-				position:absolute;
-				top:0;
-				left:0;
-				width:100%;
-				height:100%;
-			}
-			#c_body{
-				margin-top:75px;
-				background-color:#EECFA1;
-				/**opacity:.9;**/
-				padding:0px 20px;
-				margin-bottom:50px;
-				-webkit-border-radius: 6px;
-			  -moz-border-radius: 6px;
-  			border-radius: 6px;
-  			border:2px solid #8B3E2F;
-			}
-			
-			
-    </style>
+    <link rel="stylesheet" href="style/style.css" />
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -83,6 +21,8 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
+    
+    
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
@@ -121,12 +61,16 @@
 				<!--<div class="span12">
 					<div class="row" id="market">-->
         				<div class="span10">        
-          			
-          				<div class="hero-unit">
+          				<div class="floaty">
+          				<div class="hero-unit" id="head_liner">
+          					<!--<img src="img/map4.png" alt="mapRSide" id="sideR"/>-->
+          					<!--<img src="img/sideBar.png" alt="mapSide"/ id="sideM">-->
             				<h1>Welcome to the maphub project!</h1>
             				<p></p>
             				<p>maphub is a portal environment for social annotation of digitized (historic) maps, powered by YUMA.</p>
             				<!-- <p><a class="btn btn-primary btn-large" href="about">Learn more &raquo;</a></p> -->
+            				<!--<img src="img/map4.png" alt="mapRSide" id="sideR"/>-->
+          				</div>
           				</div>
         			</div><!-- span 10 -->
         		
@@ -138,24 +82,44 @@
 
       <!-- Example row of columns -->
       <div class="row" id="about">
-        <div class="span4">
-          <h2>What is maphub?</h2>
-           <p>Maphub is a Web portal prototype for georeferencing and annotating digitized, high-resolution historic maps. All annotations will be represented in the <a href="http://www.openannotation.org/spec/beta/" title="Open Annotation: Beta Data Model Guide">Open Annotation Collaboration Data Model</a> and become Web resources that can be accessed by various clients simply by dereferencing HTTP URIs. The portal will be bootstrapped with approximately 6000 public domain maps taken from the <a href="http://memory.loc.gov/ammem/gmdhtml/" title="Map Collections Home Page">Library of Congress Historic Map division</a>. A first beta-version will be released for interested test users in early summer 2012.</p>
+        <div class="span3">
+          <h3>What is maphub? </h3>
+           <p id="helv">Maphub is a Web portal prototype for georeferencing and annotating digitized, high-resolution historic maps. All annotations will be represented in the <a href="http://www.openannotation.org/spec/beta/" title="Open Annotation: Beta Data Model Guide">Open Annotation Collaboration Data Model</a> and become Web resources that can be accessed by various clients simply by dereferencing HTTP URIs. The portal will be bootstrapped with approximately 6000 public domain maps taken from the <a href="http://memory.loc.gov/ammem/gmdhtml/" title="Map Collections Home Page">Library of Congress Historic Map division</a>. A first beta-version will be released for interested test users in early summer 2012.</p>
         </div>
-				<div class="span4" >
-					<h2>Demo Screencast</h2>
-					<div class="video_wrapper">
+				<div class="span3" >
+					<h3>Demo Screencast</h3>
+					<div class="video_wrapper" >
         		
-						<iframe src="http://player.vimeo.com/video/21390925?title=0&amp;byline=0&amp;portrait=0" class="video" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						<iframe src="http://player.vimeo.com/video/21390925?title=0&amp;byline=0&amp;portrait=0" class="video" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen data-toggle="modal" href="#myModal"></iframe>
+						<a class="btn" data-toggle="modal" href="#myModal" >Launch Modal</a>
+					</div>
+					<div class="modal hide" id="myModal">
+  					<div class="modal-header">
+    					<button type="button" class="close" data-dismiss="modal">×</button>
+    					<h3>Modal header</h3>
+  					</div>
+  					<div class="modal-body">
+    					<p>One fine body…</p>
+  					</div>
+  					<div class="modal-footer">
+    					<a href="#" class="btn" data-dismiss="modal">Close</a>
+    					<a href="#" class="btn btn-primary">Save changes</a>
+  					</div>
 					</div>
         </div>
-        <div class="span4">
-          <h2>Status and Technical Details</h2>
-           <p>Currently we are working on the OAC specification for map annotations. We are also building the portal using Ruby on Rails reusing components and algorithms we previously developed for the <a href="https://github.com/yuma-annotation">YUMA annotation framework</a>. This includes component that allow us to link user-contributed annotations with data from other publicly available datasources, such as <a href="http://dbpedia.org/" title="">DBpedia</a> and <a href="http://www.geonames.org/" title="GeoNames">GeoNames</a>.</p>
+      	<div class="span3">
+          <h3>Status and Technical Details</h3>
+           <p id= "helv">Currently we are working on the OAC specification for map annotations. We are also building the portal using Ruby on Rails reusing components and algorithms we previously developed for the <a href="https://github.com/yuma-annotation">YUMA annotation framework</a>. This includes component that allow us to link user-contributed annotations with data from other publicly available datasources, such as <a href="http://dbpedia.org/" title="">DBpedia</a> and <a href="http://www.geonames.org/" title="GeoNames">GeoNames</a>.</p>
         </div>
+      
+      
       </div>
       
       <div class="padding"></div>
+      
+      <div class="row" id="about">
+      	
+      </div>
       
       <footer>
         <p>&copy; maphub 2012; Website powered by <a href="http://twitter.github.com/bootstrap/" title="Bootstrap, from Twitter">Bootstrap, from Twitter.</a></p>
@@ -164,5 +128,14 @@
     </div> <!-- /container -->
 
  </div> <!-- /landing --> 
+ 
+ 
+
+ <script src="bootstrap/js/bootstrap.js"></script>
+ <script type="text/javascript">
+    $(document).ready(function() {   
+        $('#myModal').modal('show');
+    });
+</script>
  </body>
 </html>
