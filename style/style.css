@@ -17,7 +17,8 @@
 }
 
 body{
-	background-color:#FFF5EE;
+	background-color:#EECFA1;
+	/**background-color:#FFF5EE;**/
 	/**background-image:url("../img/oceanPaper2.gif");
 	background-repeat:repeat;**/
 	/**background-size:100%;
@@ -27,7 +28,7 @@ body{
 }
 
 .padding {
-  height:50px;
+  height:25px;
 }
 
 #market{
@@ -57,7 +58,8 @@ body{
 }
 
 #c_body{
-	margin-top:75px;
+	margin-top:15px;
+	/**background-color:#FFF5EE;**/
 	background-color:#EECFA1;
 	/**opacity:.9;**/
 	padding:0px 20px;
@@ -67,7 +69,7 @@ body{
   border-radius: 6px;
   /**border:3px solid #8B4C39;**/
   align:center;
-  border: 3px solid #283a62;
+  /**border: 3px solid #283a62;**/
 }
 
 #con_body{
@@ -105,15 +107,18 @@ body{
 
 #sp3{
 	border-left:solid 4px #283a62;
-	border-top:solid 4px #283a62;
+	border-bottom:solid 4px #283a62;
 	padding-left:20px;
 	font-family:Architects Daughter;
 	padding-top:20px;
 }
 
+
+
 #about{
 	align:center;
 	margin-left:4%;
+	margin-bottom:20px;
 }
 
 #about_Title{
@@ -147,7 +152,7 @@ body{
 }
 
 label{
-	font-family:helvetica;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-size:125%;
 }
 
@@ -184,7 +189,9 @@ label{
 
 
 #helv{
-	font-family:helvetica;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size:110%;
+	font-weight:500;
 }
 
 #small{
@@ -194,4 +201,41 @@ label{
 
 #descrip{
 	margin-top:11%;
+	font-family:Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight:bold;
+	font-size:200%;	
+}
+
+
+.topPart{
+	width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  *zoom: 1;
+  margin-bottom:0px;
+	margin-top:75px;
+	/**opacity:.9;**/
+	padding:0px 20px 20px 0px;
+	/**border-left: 4px solid #283a62;**/
+
+}
+
+
+#top{
+	align:center;
+	margin-left:4%;
+	margin-top:10px;
+	padding-left:30px;
+}
+
+.hero-unit{
+	margin-bottom:5px;
+}
+
+.hero-unit h1{
+	font-size:40px;
+
+}
+.status{
+	margin-bottom:10px;
 }

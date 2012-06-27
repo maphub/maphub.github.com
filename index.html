@@ -39,38 +39,35 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="index.html">maphub</a>
+          <!--<a class="brand" href="index.html">maphub</a>-->
+          <a href="index.html"><img src="img/logo.png" alt="Logo-Maphub" class="brand"/></a>s
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="index.html">Home</a></li>
-				<li class="divider-vertical"></li>
+				<!--<li class="divider-vertical"></li>
               <li><a href="about.html">About</a></li>
 				<li class="divider-vertical"></li>
-              <li><a href="contact_us.html">Contact</a></li>
+              <li><a href="contact_us.html">Contact</a></li>-->
             </ul>
           </div><!--/.nav-collapse -->
         </div><!-- container -->
       </div>
     </div>
 		
-		<div class="top">
+		<div class="topPart">
 		<div class="row" id="intro">
-				<!--<div class="span12">
-					<div class="row" id="market">-->
         				<div class="span12">        
           				<div class="hero-unit" id="head_liner">
-          					<!--<img src="img/map4.png" alt="mapRSide" id="sideR"/>-->
-          					<!--<img src="img/sideBar.png" alt="mapSide"/ id="sideM">-->
-            				<h1>Welcome to the maphub project!</h1>
+          					<img src="img/welcomeReal.png" alt="banner"/>
+            				<!--<h1>Welcome to the maphub project!</h1>-->
             				<p></p>
             				<div class="row">
             					<div class="span4" id="descrip">
             						<p>~maphub is a portal environment for social annotation of digitized (historic) maps, powered by YUMA.</p>
-            				<!-- <p><a class="btn btn-primary btn-large" href="about">Learn more &raquo;</a></p> -->
-            				<!--<img src="img/map4.png" alt="mapRSide" id="sideR"/>-->
             					</div>
             					<div class="span7 pull-right">
-            						<h3>Demo Screencast</h3>
+            						<img src="img/demo.png" alt="Demo Screencast" class="status"/>
+            						<!--<h3>Demo Screencast</h3>-->
 												<div class="video_wrapper" >
         		
 													<iframe src="http://player.vimeo.com/video/21390925?title=0&amp;byline=0&amp;portrait=0" class="video" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen data-toggle="modal" href="#myModal"></iframe>
@@ -80,38 +77,42 @@
             				</div><!--row-->
           				</div><!--hero-->
         			</div><!-- span 10 -->
-        		
-					<!--</div>
-				</div>-->
 			</div><!-- intro -->
-			</div>
+			</div><!-- topPart -->
 	
     <div class="container" id="c_body">
-		
-			
-      
-      <div class="padding"></div>
+    
+    	<div class="padding"></div>
 
       <!-- Example row of columns -->
       <div class="row" id="about">
-        <div class="span5" id="sp3">
-          <h3>What is maphub? </h3>
-           <p id="helv">Maphub is a Web portal prototype for georeferencing and annotating digitized, high-resolution historic maps. All annotations will be represented in the <a href="http://www.openannotation.org/spec/beta/" title="Open Annotation: Beta Data Model Guide">Open Annotation Collaboration Data Model</a> and become Web resources that can be accessed by various clients simply by dereferencing HTTP URIs. The portal will be bootstrapped with approximately 6000 public domain maps taken from the <a href="http://memory.loc.gov/ammem/gmdhtml/" title="Map Collections Home Page">Library of Congress Historic Map division</a>. A first beta-version will be released for interested test users in early summer 2012.</p>
+        <div class="span10" id="sp3">
+        	<img src="img/whatIsReal.png" alt="What is Maphub?"/>
+          <!--<h2>What is maphub? <small id="small">The Annotation of Historical Maps</small></h2>-->
         </div>
-				
-      	<div class="span5" id="sp3">
-          <h3>Status and Technical Details</h3>
-           <p id= "helv">Currently we are working on the OAC specification for map annotations. We are also building the portal using Ruby on Rails reusing components and algorithms we previously developed for the <a href="https://github.com/yuma-annotation">YUMA annotation framework</a>. This includes component that allow us to link user-contributed annotations with data from other publicly available datasources, such as <a href="http://dbpedia.org/" title="">DBpedia</a> and <a href="http://www.geonames.org/" title="GeoNames">GeoNames</a>.</p>
+        <div class="row">
+        	<div class="span10" id="top">
+        		<p id="helv">Maphub is a Web portal prototype for georeferencing and annotating digitized, high-resolution historic maps. All annotations will be represented in the <a href="http://www.openannotation.org/spec/beta/" title="Open Annotation: Beta Data Model Guide">Open Annotation Collaboration Data Model</a> and become Web resources that can be accessed by various clients simply by dereferencing HTTP URIs. The portal will be bootstrapped with approximately 6000 public domain maps taken from the <a href="http://memory.loc.gov/ammem/gmdhtml/" title="Map Collections Home Page">Library of Congress Historic Map division</a>. A first beta-version will be released for interested test users in early summer 2012.</p>
+       		</div>
         </div>
-      
-      
-      </div>
+      </div><!-- About -->
       
       <div class="padding"></div>
       
-      <div class="row" id="about">
-      	
+      <div class="row" id="about">	
+      	<div class="span10" id="sp3">
+      		<img src="img/status.png" alt="Status and Technical Details" class="status"/>
+          <!--<h2>Status and Technical Details</h2>-->
+        </div>
+        <div class="row">
+        	<div class="span10" id="top">
+          	<p id= "helv">Currently we are working on the OAC specification for map annotations. We are also building the portal using Ruby on Rails reusing components and algorithms we previously developed for the <a href="https://github.com/yuma-annotation">YUMA annotation framework</a>. This includes component that allow us to link user-contributed annotations with data from other publicly available datasources, such as <a href="http://dbpedia.org/" title="">DBpedia</a> and <a href="http://www.geonames.org/" title="GeoNames">GeoNames</a>.</p>
+        	</div>
+        </div>
       </div>
+      
+      <div class="padding"></div>
+      <div class="padding"></div>
       
       <footer>
         <p>&copy; maphub 2012; Website powered by <a href="http://twitter.github.com/bootstrap/" title="Bootstrap, from Twitter">Bootstrap, from Twitter.</a></p>
@@ -121,13 +122,5 @@
 
  </div> <!-- /landing --> 
  
- 
-
- <script src="bootstrap/js/bootstrap.js"></script>
- <script type="text/javascript">
-    $(document).ready(function() {   
-        $('#myModal').modal('show');
-    });
-</script>
  </body>
 </html>
