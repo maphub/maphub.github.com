@@ -131,9 +131,10 @@ body{
 
 .brand{
 	font-family:Architects Daughter;
-	color:#CDAA7D;
+	color: #403228;
 }
 
+/**color:#CDAA7D;**/
 #contact_Form{
 	margin-left:19%;
 	margin-top:50px;
@@ -238,7 +239,7 @@ label{
 }
 
 .navbar-inner{
-	background-color: #7F6551;
+	/**background-color: #7F6551;
 	background-image: linear-gradient(bottom, #7F6551 0%, #3F3228 51%);
 	background-image: -o-linear-gradient(bottom, #7F6551 0%, #3F3228 51%);
 	background-image: -moz-linear-gradient(bottom, #7F6551 0%, #3F3228 51%);
@@ -252,13 +253,48 @@ label{
 		color-stop(0, #7F6551),
 		color-stop(0.51, #3F3228)
 	);
-	filter:none;
+	filter:none;**/
+
+	/** second try
+	background-color: #987860;
+	background-image: linear-gradient(top, #987860 19%, #4C3C30 60%, #987860 100%);
+	background-image: -o-linear-gradient(top, #987860 19%, #4C3C30 60%, #987860 100%);
+	background-image: -moz-linear-gradient(top, #987860 19%, #4C3C30 60%, #987860 100%);
+	background-image: -webkit-linear-gradient(top, #987860 19%, #4C3C30 60%, #987860 100%);
+	background-image: -ms-linear-gradient(top, #987860 19%, #4C3C30 60%, #987860 100%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.19, #987860),
+		color-stop(0.6, #4C3C30),
+		color-stop(1, #987860)
+	);
+	filter:none;**/
+
+
+	/**Third Try**/
+	background-image: linear-gradient(top, #987860 19%, #655040 60%, #987860 100%);
+	background-image: -o-linear-gradient(top, #987860 19%, #655040 60%, #987860 100%);
+	background-image: -moz-linear-gradient(top, #987860 19%, #655040 60%, #987860 100%);
+	background-image: -webkit-linear-gradient(top, #987860 19%, #655040 60%, #987860 100%);
+	background-image: -ms-linear-gradient(top, #987860 19%, #655040 60%, #987860 100%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.19, #987860),
+		color-stop(0.6, #655040),
+		color-stop(1, #987860)
+	);
 
 }
 
 .navbar .nav .active > a, .navbar .nav .active > a:hover {
 	height:28px;
-	background-color: #3F3228;
+	/**background-color: #3F3228;
 	background-image: linear-gradient(bottom, #7F6551 0%, #3F3228 51%);
 	background-image: -o-linear-gradient(bottom, #7F6551 0%, #3F3228 51%);
 	background-image: -moz-linear-gradient(bottom, #7F6551 0%, #3F3228 51%);
@@ -272,7 +308,43 @@ label{
 		color-stop(0, #7F6551),
 		color-stop(0.51, #3F3228)
 	);
-	filter:none;
+	filter:none;**/
+
+
+	/** second try
+	background-color: #987860;
+	background-image: linear-gradient(top, #987860 19%, #4C3C30 60%, #987860 100%);
+	background-image: -o-linear-gradient(top, #987860 19%, #4C3C30 60%, #987860 100%);
+	background-image: -moz-linear-gradient(top, #987860 19%, #4C3C30 60%, #987860 100%);
+	background-image: -webkit-linear-gradient(top, #987860 19%, #4C3C30 60%, #987860 100%);
+	background-image: -ms-linear-gradient(top, #987860 19%, #4C3C30 60%, #987860 100%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.19, #987860),
+		color-stop(0.6, #4C3C30),
+		color-stop(1, #987860)
+	);
+	filter:none;**/
+
+	/**Third Try**/
+	background-image: linear-gradient(top, #987860 19%, #655040 60%, #987860 100%);
+	background-image: -o-linear-gradient(top, #987860 19%, #655040 60%, #987860 100%);
+	background-image: -moz-linear-gradient(top, #987860 19%, #655040 60%, #987860 100%);
+	background-image: -webkit-linear-gradient(top, #987860 19%, #655040 60%, #987860 100%);
+	background-image: -ms-linear-gradient(top, #987860 19%, #655040 60%, #987860 100%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.19, #987860),
+		color-stop(0.6, #655040),
+		color-stop(1, #987860)
+	);
+
 	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size: 125%;
 
@@ -281,5 +353,6 @@ label{
 .navbar .nav > li > a {
 	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size: 125%;
+	color:#403228;
 
 }
