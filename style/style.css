@@ -324,7 +324,9 @@ label{
 .navbar .nav > li > a {
 	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size: 125%;
-	color:#403228;
+	font-weight: normal;
+	/**color:#FCD193;**/
+	color:#E7DCCD;
 
 }
 
@@ -338,10 +340,13 @@ label{
 	 font-size: 18px;
 	 margin-top: 5px;
 	 margin-left: 7%;
+	 color:#EFC68C;
 }
 
+
+
 .navbar .nav.pull-right {
-	margin-right: 7%;	
+	/**margin-right: 155px;	**/
 }
 
 .demoTitle{
@@ -362,4 +367,17 @@ label{
 #desc{
 	margin-left: 2%;
 	text-align: center;
+}
+#nav_container{
+	width:1100px;
+	margin-right: auto;
+	margin-left: auto;
+	*zoom: 1;
+
+	/**margin-left: 100px;
+	margin-right: 99%;
+	padding-right: 35%;**/
+	border:5px solid #000000;
+
+
 }
