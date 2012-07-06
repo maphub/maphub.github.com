@@ -28,6 +28,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
     <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
@@ -43,8 +44,10 @@
           <a class="brand" href="index.html">maphub</a>
           <div class="nav-collapse">
             <ul class="nav pull-right">
-              <li><a href="cartographer.html">Cartographers</a></li>
-              <li><a href="source.html">Source</a></li>
+              <li><a href="https://github.com/maphub/maphub-portal">Code</a></li>
+              <li><a href="http://maphubdev.mminf.univie.ac.at/">Demo</a></li>
+              <li><a href="http://maphub.github.com/oac-map-examples/">Specs</a></li>
+              <li><a href="https://github.com/maphub/maphub-portal/issues">Issues</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!-- container -->
@@ -57,22 +60,24 @@
 
       <div class="topPart">
         <div class="row" id="intro">
-          <div class="span12">        
+          <div class="span10">        
             <div class="hero-unit" id="head_liner">
               <!--<h1>Welcome to the maphub project!</h1>-->
               <p></p>
               <div class="row">
                 <div class="span4" id="descrip">
-                  <h2 class="demoTitle">Map Manipulation</h2>
-                  <p id="desc">It is now possible to annotate and implement georeferencing on a plethora of historic maps!<!--maphub is a portal environment for the social annotation of digitized (historic) maps, powered by YUMA.--></p>
+                  <h2 class="demoTitle"> Historic Map Annotation</h2>
+                  <p id="desc">Add your knowledge to a collection of historic maps!<!--maphub is a portal environment for the social annotation of digitized (historic) maps, powered by YUMA.--></p>
                     <div class="padding"></div>
                     <ul id="mapList">
-                      <li>Annotate and Tag Historic Maps</li>
-                      <li>Search for Maps using key words</li>
-                      <li>Link sites within Historic Maps to current day locations</li>
+                      <li>Comment and Tag Historic Maps</li>
+                      <li>Link Maps to Wikipedia</li>
+                      <li>Search for Maps in Multiple Languages</li>
+                      <li>Identify Locations</li>
+
                     </ul>
                 </div>
-                <div class="span7 pull-right">
+                <div class="span5 pull-right">
                   <h3 class="demoTitle">Demo Screencast</h3>
                   <div class="video_wrapper" >
             
@@ -86,35 +91,52 @@
           </div><!-- span 10 -->
         </div><!-- intro -->
       </div><!-- topPart -->
-    
+      
+    <div class="main_body">
     	<div class="padding"></div>
 
       <!-- Example row of columns -->
       <div class="row" id="about">
         
-        <div class="span6">
+        <div class="span4" id="span4">
           <div id="sp3">
               <h2>Annotation</h2>
           </div>
 
           <div id="top">
-        	 <p id="helv">Annotating historical maps is made easy through the use of google <a href="http://openlayers.org/">OpenLayers</a>.  Annotate by creating either a polygon, line or box region on the map and double clicking.  A window will pop up, prompting you to type a description of the region, as well as displaying certain tags that are retrieved through <a href="http://www.wikipedia.org/">Wikipedia</a>.  You can click once to accept a tag, twice to cancel a tag, or leave it in its neatral state.  Accepted tags will then be linked to the notation and the map, thus allowing for easy retrieval through searching.</p>
+        	 <p class="annot_control">Annotating historical maps is made easy through the use of <a href="http://openlayers.org/">OpenLayers</a>.  Annotate by creating either a polygon, line or box region on the map.</p>
+           <p><img class="dem" id="too_smallest" src="img/annotation_buttons.png"/><img class="dem" id="too_small" src="img/alaska_annotation.png"/></p>  
+
+           <p class="annot_control">A window will pop up, prompting you to type a description of the region, as well as displaying certain tags that are retrieved through
+           <a href="http://www.wikipedia.org/">Wikipedia</a>.</p>
+           <p><img class="dem" src="img/tags.png"/></p>  
+
+           <p class="annot_control">You can either accept or deny these tags.  Accepted tags will then be linked to the notation and the map, thus allowing for easy retrieval through searching.</p>
        	  </div>
         </div>
+        <div class="span3"></div>
 
-        <div class="span6">
+        <div class="span4" id="span4">
           <div id="sp3">
             <h2>GeoReferencing</h2>
           </div>
           <div id="top">
-            <p id= "helv">There are critical points that may be added to each map, these points reference a specific location on the map which corresponds to a current day location.  After three of these points are added to the map, georeferencing can be implemented.  The app itself will then be able to prompt the user with more locations as well as generating more intelligent tag choices for annotations.</p>
+            <p class="annot_control">There are control points that may be added to each map,</p>
+            <p><img class="dem" src="img/control_point.png"/></p> 
+            
+            <p class="annot_control">these points reference a specific location on the map which corresponds to a current day location.</p>
+            <p><img class="dem" id="too_small" src="img/control_pick.png"></p>
+            
+            <p class="annot_control">After three of these points are added to the map, georeferencing can be implemented.  The app itself will then be able to prompt the user with more locations as well as generate intelligent tag choices for annotations.</p>
+            <p><img class="dem" src="img/three_points.png"></p>
+
           </div>
         </div>
       </div><!-- About -->
-
+      
       <div class="padding"></div>
       <div class="row" id="about">
-        <div class="span6">
+        <div class="span4" id="span4">
           <div id="sp3">
             <h2>What is maphub? <!--<small id="small">The Annotation of Historical Maps</small>--></h2>
           </div>
@@ -123,7 +145,7 @@
           </div>
         </div>
 
-        <div class="span6">
+        <div class="span4" id="span4">
           <div id="sp3">
             <h2>Status and Technical Details</h2>
           </div>
@@ -136,6 +158,7 @@
       
       <div class="padding"></div>
       <div class="padding"></div>
+    </div><!--main_body-->
       
       <footer>
         <p>&copy; maphub 2012; Website powered by <a href="http://twitter.github.com/bootstrap/" title="Bootstrap, from Twitter">Bootstrap, from Twitter.</a></p>
