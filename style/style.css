@@ -51,7 +51,7 @@ body{
 	color:#000000;
 }
 
-#sp3{
+.sp3{
 	border-left:solid 4px #283a62;
 	border-bottom:solid 4px #283a62;
 	padding-left:20px;
@@ -71,7 +71,7 @@ body{
 	color: #403228;
 }
 
-#helv{
+.helv{
 	font-family: 'Gentium Basic', serif;
 	font-size:18px;
 	font-weight:500;
@@ -139,7 +139,7 @@ body{
 }
 
 
-#top{
+.top{
 	align:center;
 	margin-top:10px;
 
@@ -147,17 +147,25 @@ body{
 
 .hero-unit{
 	margin-bottom:5px;
+	font-family:Architects Daughter;
+	background-color:rgb(0,0,0);
+	background-image:url('../../../img/parchment.jpeg');
+	background-repeat:repeat;
+	align:center;
 }
 
 .hero-unit h1{
 	font-size:40px;
+	margin-bottom: 20px;
+
+
 
 }
 
 .hero-unit p {
 	font-family: 'Gentium Basic', serif;
 	font-size:18px;
-	font-weight:500;
+	font-weight:600;
 	line-height: 23px;
 
 }
@@ -200,6 +208,7 @@ body{
 	font-family: 'Gentium Basic', serif;
 	font-size: 25px;
 	font-weight:500;
+	color:#F5F5DC;
 
 }
 
@@ -224,10 +233,12 @@ body{
 	margin-top: 5px;
 	margin-left: 7%;
 	color:#FFEBCD;
+	/**color: #CDB79E;**/
 }
 
 .navbar .nav > li > a:hover {
 	color:#E7DCCD;
+	/**color: #FFEBCD;**/
 
 }
 
@@ -244,10 +255,21 @@ body{
 	text-align: center;
 }
 #nav_container{
-	width:1100px;
+	width:950px;
 	margin-right: auto;
 	margin-left: auto;
 	*zoom: 1;
 }
 
+a {
+  color: #005580;
+  text-decoration: none;
+}
 
+.nav .nav-header {
+	color: #291400;
+}
+
+.nav-list .active > a, .nav-list .active > a:hover{
+	color:#291400;
+}
