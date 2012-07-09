@@ -59,14 +59,14 @@ body{
 	padding-top:20px;
 }
 
-#about{
+.about{
 	align:center;
 	margin-left:5%;
 	margin-bottom:20px;
 }
 
 .brand{
-	margin-left: 100px%;
+	margin-left: 100px;
 	font-family:Architects Daughter;
 	color: #403228;
 }
@@ -92,18 +92,6 @@ body{
 	border: 2px solid #283a62;
 	margin-top: 10px;
 	margin-bottom: 10px;
-
-}
-
-#too_small{
-	margin-left: 20px;
-	margin-right: 20px;
-
-}
-
-#too_smallest{
-	margin-left: 25px;
-	margin-right: 25px;
 
 }
 
@@ -149,7 +137,7 @@ body{
 	margin-bottom:5px;
 	font-family:Architects Daughter;
 	background-color:rgb(0,0,0);
-	background-image:url('../../../img/parchment.jpeg');
+	background-image:url('../img/parchment.jpeg');
 	background-repeat:repeat;
 	align:center;
 }
@@ -213,7 +201,7 @@ body{
 }
 
 .container{
-	width:1100px;
+	width:950px;
 }
 
 .main_body{
@@ -221,7 +209,7 @@ body{
 	margin-right: auto;
 	margin-left: auto;
 	*zoom: 1;
-	padding-left: 15px;
+	padding-left: 0px;
 	padding-right:15px;
 
 }
@@ -272,4 +260,38 @@ a {
 
 .nav-list .active > a, .nav-list .active > a:hover{
 	color:#291400;
+}
+
+#float-left{
+	/**margin-right: 60%;**/
+	float:left;
+
+}
+
+
+#float-right{
+	float:right;
+
+}
+
+#float-left1{
+	/**margin-right: 60%;**/
+	float:left;
+
+}
+
+
+#float-right1{
+	float:right;
+
+}
+
+img{ 
+	display:block; /*allows the element to take auto margins*/ 
+	margin:0 auto; /*centers in compliant browsers*/ 
+	text-align:center; /*centers in old versions of IE*/ 
+}
+
+.row{
+	margin-left: -60px;
 }

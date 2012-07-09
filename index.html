@@ -89,20 +89,21 @@
         </div><!-- intro -->
       </div><!-- topPart -->
       
-    <div class="main_body">
+      <div class="main_body">
     	<div class="padding"></div>
 
       <!-- Example row of columns -->
-      <div class="row" id="about">
+      <div class="row">
+        <div class="about">
         
-        <div class="span4">
+          <div class="span4" id="float-left">
           <div class="sp3">
               <h2>Annotation</h2>
           </div>
 
           <div class="top">
         	 <p class="annot_control">Annotating historical maps is made easy through the use of <a href="http://openlayers.org/">OpenLayers</a>.  Annotate by creating either a polygon, line or box region on the map.</p>
-           <p><img class="dem" id="too_smallest" src="img/annotation_buttons.png" alt="buttons"/><img class="dem" id="too_small" src="img/alaska_annotation.png" alt="sample_annotation"/></p>  
+           <p><img class="dem" src="img/annotation_buttons.png" alt="buttons"/><img class="dem" src="img/alaska_annotation.png" alt="sample_annotation"/></p>  
 
            <p class="annot_control">A window will pop up, prompting you to type a description of the region, as well as displaying certain tags that are retrieved through
            <a href="http://www.wikipedia.org/">Wikipedia</a>.</p>
@@ -110,10 +111,9 @@
 
            <p class="annot_control">You can either accept or deny these tags.  Accepted tags will then be linked to the notation and the map, thus allowing for easy retrieval through searching.</p>
        	  </div>
-        </div>
-        <div class="span3"></div>
+          </div><!--span4-->
 
-        <div class="span4">
+        <div class="span4" id="float-right">
           <div class="sp3">
             <h2>GeoReferencing</h2>
           </div>
@@ -122,18 +122,21 @@
             <p><img class="dem" src="img/control_point.png" alt="example_controlPoint"/></p> 
             
             <p class="annot_control">these points reference a specific location on the map which corresponds to a current day location.</p>
-            <p><img class="dem" id="too_small" src="img/control_pick.png" alt="picking_location"/></p>
+            <p><img class="dem" src="img/control_pick.png" alt="picking_location"/></p>
             
             <p class="annot_control">After three of these points are added to the map, georeferencing can be implemented.  The app itself will then be able to prompt the user with more locations as well as generate intelligent tag choices for annotations.</p>
             <p><img class="dem" src="img/three_points.png" alt="display_controlPoints"/></p>
 
           </div>
-        </div>
+        </div><!--span4-->
       </div><!-- About -->
+      </div>
       
       <div class="padding"></div>
-      <div class="row" id="about">
-        <div class="span4">
+      <div class="padding"></div>
+      <div class="row">
+        <div class="about">
+        <div class="span4" id="float-left1">
           <div class="sp3">
             <h2>What is maphub? <!--<small id="small">The Annotation of Historical Maps</small>--></h2>
           </div>
@@ -142,7 +145,7 @@
           </div>
         </div>
 
-        <div class="span4">
+        <div class="span4" id="float-right1">
           <div class="sp3">
             <h2>Technical Details</h2>
           </div>
@@ -151,16 +154,16 @@
             <p class= "helv">Currently we are working on the OAC specification for map annotations. We are also building the portal using Ruby on Rails reusing components and algorithms we previously developed for the <a href="https://github.com/yuma-annotation">YUMA annotation framework</a>. This includes component that allow us to link user-contributed annotations with data from other publicly available datasources, such as <a href="http://dbpedia.org/" title="">DBpedia</a> and <a href="http://www.geonames.org/" title="GeoNames">GeoNames</a>.</p>
           </div>
         </div>
+        </div>
       </div><!-- About -->
       
       <div class="padding"></div>
       <div class="padding"></div>
-    </div> <!--main-body-->
+      </div> <!--main-body-->
       
       <footer>
         <p>&copy; maphub 2012; Website powered by <a href="http://twitter.github.com/bootstrap/" title="Bootstrap, from Twitter">Bootstrap, from Twitter.</a></p>
       </footer>
-
     </div> <!-- /container -->
 
  </div> <!-- /landing --> 
