@@ -61,7 +61,7 @@ body{
 
 .about{
 	align:center;
-	margin-left:5%;
+	margin-left:2.5%;
 	margin-bottom:20px;
 }
 
@@ -209,7 +209,6 @@ body{
 	margin-right: auto;
 	margin-left: auto;
 	*zoom: 1;
-	padding-left: 0px;
 	padding-right:15px;
 
 }
@@ -293,5 +292,5 @@ img{
 }
 
 .row{
-	margin-left: -60px;
+	margin-left: -20px;
 }
