@@ -184,7 +184,7 @@ h2 {
 }
 
 .main_body{
-	/*width:950px;*/
+	width:950px;
 	margin-right: auto;
 	margin-left: auto;
 	*zoom: 1;
