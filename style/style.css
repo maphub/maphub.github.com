@@ -115,3 +115,19 @@ img{
 	margin:0 auto; /*centers in compliant browsers*/ 
 	text-align:center; /*centers in old versions of IE*/ 
 }
+
+footer {
+    margin-top: 25px;
+    border-top: solid 2px #283a62;
+    margin-bottom: 25px;
+    
+}
+
+footer p {
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height: 15px;
+	text-align: center;
+
+}

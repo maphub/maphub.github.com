@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>maphub</title>
+  <title>Maphub - Historic Map Annotation Portal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Maphub in an online application for exploring and annotating digitized, high-resolution historic maps">
+  <meta name="author" content="Bernhard Haslhofer, Werner Robitza">
 
   <!-- Le JS -->
   <script src="bootstrap/js/bootstrap.js"></script>
@@ -29,6 +29,20 @@
   <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33528080-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
 </head>
 
 <body>
@@ -64,14 +78,6 @@
 
     <div class="main_body">
 
-      <!-- <div class="taglines">
-        <ul>
-          <li>Comment and Tag Historic Maps</li>
-          <li>Link Maps to Wikipedia</li>
-          <li>Search for Maps in Multiple Languages</li>
-          <li>Identify Locations</li>
-        </ul>
-      </div> -->
 
       <div class="padding"></div>
 
@@ -81,27 +87,26 @@
           <div class="span4" style="float:left">
             <h2>Annotation</h2>
             <div>
-              <p>Annotating historical maps is made easy through the use of <a href="http://openlayers.org/">OpenLayers</a>.  Annotate by creating either a polygon, line or box region on the map.</p>
+              <p>Annotations can easily be added by creating overlays on top of map images.</p>
               <p><img class="dem" src="img/annotation_buttons.png" alt="buttons"/><img class="dem" src="img/alaska_annotation.png" alt="sample_annotation"/></p>  
 
-              <p>A window will pop up, prompting you to type a description of the region, as well as displaying certain tags that are retrieved through
-                <a href="http://www.wikipedia.org/">Wikipedia</a>.</p>
+              <p>A window will pop up, prompting you to add an annotation for that region. While you are typing your annotation, Maphub will suggest possibly relevant <a href="http://www.wikipedia.org/">Wikipedia</a> tags for your annotation.</p>
                 <p><img class="dem" src="img/tags.png" alt="example_tags"/></p>  
 
-                <p>You can either accept or deny these tags.  Accepted tags will then be linked to the notation and the map, thus allowing for easy retrieval through searching.</p>
+                <p>You can either accept or deny these tags. Accepted tags will then be linked to the annotation and support multilingual map search and retrieval.</p>
               </div>
             </div><!--span4-->
 
             <div class="span4" style="float:right">
               <h2>GeoReferencing</h2>
               <div>
-                <p>There are control points that may be added to each map,</p>
+                <p>Control points may be added to each map.</p>
                 <p><img class="dem" src="img/control_point.png" alt="example_controlPoint"/></p> 
 
-                <p>these points reference a specific location on the map which corresponds to a current day location.</p>
+                <p>Each control point is associated with known geographic coordinates.</p>
                 <p><img class="dem" src="img/control_pick.png" alt="picking_location"/></p>
 
-                <p>After three of these points are added to the map, georeferencing can be implemented.  The app itself will then be able to prompt the user with more locations as well as generate intelligent tag choices for annotations.</p>
+                <p>After at least three of these points are added to the map, a geographic model can be computed for the map. Maphub will then be able to prompt the user with more locations as well as generate possible tag choices for annotations.</p>
                 <p><img class="dem" src="img/three_points.png" alt="display_controlPoints"/></p>
 
               </div>
@@ -111,27 +116,36 @@
 
         <div class="padding"></div>
         <div class="padding"></div>
+        
         <div class="row">
           <div class="about">
+
             <div class="span4" style="float:left">
-              <h2>What is maphub?</h2>
+              <h2>About Maphub</h2>
               <div>
-                <p>Maphub is a Web portal prototype for georeferencing and annotating digitized, high-resolution historic maps. All annotations will be represented in the <a href="http://www.openannotation.org/spec/beta/" title="Open Annotation: Beta Data Model Guide">Open Annotation Collaboration Data Model</a> and become Web resources that can be accessed by various clients simply by dereferencing HTTP URIs. The portal will be bootstrapped with approximately 6000 public domain maps taken from the <a href="http://memory.loc.gov/ammem/gmdhtml/" title="Map Collections Home Page">Library of Congress Historic Map division</a>. A first beta-version will be released for interested test users in early summer 2012.</p>
+                <p>Maphub in an online application for exploring and annotating digitized, high-resolution historic maps. All user-contributed annotations are shared via the <a href="http://maphub.github.com/api/" title="Maphub Open Annotation API Documentation">Maphub Open Annotation API</a>. The <a href="http://maphubdev.mminf.univie.ac.at/" title="maphub">first demo</a> has been bootstrapped with approximately 6000 public domain maps taken from the <a href="http://memory.loc.gov/ammem/gmdhtml/" title="Map Collections Home Page">Library of Congress Historic Map division</a>.</p>
               </div>
             </div>
 
             <div class="span4" style="float:right">
               <h2>Technical Details</h2>
               <div>
-                <p>Currently we are working on the OAC specification for map annotations. We are also building the portal using Ruby on Rails reusing components and algorithms we previously developed for the <a href="https://github.com/yuma-annotation">YUMA annotation framework</a>. This includes component that allow us to link user-contributed annotations with data from other publicly available datasources, such as <a href="http://dbpedia.org/" title="">DBpedia</a> and <a href="http://www.geonames.org/" title="GeoNames">GeoNames</a>.</p>
+                <p>Maphub is implemented on the <a href="http://rubyonrails.org/" title="Ruby on Rails">Ruby on Rails</a> web framework and uses <a href="http://lucene.apache.org/solr/" title="Apache Lucene - Apache Solr">Apache Solr</a> for map full-text search. Tag suggestions are coming from <a href="http://www.geonames.org/" title="GeoNames">Geonames</a> and <a href="http://wikipedia-miner.cms.waikato.ac.nz/" title="Wikipedia Miner">Wikiminer</a> and semantic tag enrichments are retrieved from <a href="http://dbpedia.org/" title="">DBPedia</a>. <a href="http://code.google.com/p/magicktiler/" title="magicktiler - A Java tool and embeddable library for converting images into formats suitable for  publishing as zoomable Web images. - Google Project Hosting">magicktiler</a> and <a href="http://openlayers.org/" title="OpenLayers: Home">OpenLayers</a> are used to create and display zoomable raster images. Google Map/Earth overlays are being generated using <a href="http://www.klokan.cz/projects/gdal2tiles/" title="GDAL2Tiles - Publish Maps by Google Earth (KML SuperOverlay), Google Maps or OpenLayers as online static files (pyramid tile structure generator)">GDAL2Tiles</a>. The Maphub Open Annotation API follows the <a href="http://www.openannotation.org/spec/core/" title="Open Annotation Draft Data Model">W3C Open Annotation</a> specification. Maphub reuses code previously developed for the <a href="https://github.com/yuma-annotation">YUMA annotation framework</a>. </p>
               </div>
             </div> 
+            
           </div>
         </div><!-- About -->
 
-        <div class="padding"></div>
-        <div class="padding"></div>
+        <footer class="footer">
+          <p>Maphub is being developed at <a href="http://www.infosci.cornell.edu/" title="Cornell University - Information Science - Overview">Cornell Information Science</a>, with support from the University of <a href="http://illinois.edu/" title="University of Illinois at Urbana-Champaign">Illinois at Urbana-Champaign</a> and the <a href="http://www.univie.ac.at/en/" title="University of Vienna">University of Vienna</a>.</p>
+          <p>This work is supported by the <a href="http://www.openannotation.org/" title="Welcome">Open Annotation Collaboration</a> and licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons &mdash; Attribution-ShareAlike 3.0 Unported
+            &mdash; CC BY-SA 3.0">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.</p>
+          <p>All software is distributed under the <a href="http://www.fedora-commons.org/about/licenses" title="Fedora Repository Release 3.x &mdash; Fedora Repository">Apache License, Version 2.0</a>.</p>
+        </footer>
+
       </div>
+
     </div> <!-- /container -->
 
   </body>
